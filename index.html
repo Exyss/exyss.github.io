@@ -20,13 +20,7 @@
                 </div>
                 <div class="nav-links">
                     <div class="nav-item">
-                        <a class="no-decoration" href="#about">About</a>
-                    </div>
-                    <div class="nav-item">
-                        <a class="no-decoration" href="#projects">Projects</a>
-                    </div>
-                    <div class="nav-item">
-                        <a class="no-decoration" href="#contacts">Contacts</a>
+                        <i class="fas fa-adjust" style="color: var(--white)" onclick="goDark()"></i>
                     </div>
                 </div>
             </div>
@@ -135,11 +129,11 @@
                     </div>
                 </div>
             </div>
-            <div id="scrollbutton" class="dark">
+            <div id="scrollbutton">
                 <a class="no-decoration" href="javascript:goToTop();"><i class="fas fa-chevron-up"></i></a>
             </div>
         </main>
-        <footer class="dark">
+        <footer>
             <div class="row">
                 <p>Contact me!</p>
             </div>
@@ -163,5 +157,11 @@
         </footer>
         <script src="assets/js/fade-in.js"></script>
         <script src="assets/js/scrollbutton.js"></script>
+        <script>
+            //switch to dark/light mode
+            function goDark(){
+                document.body.className = document.body.className == "dark" ? "" : "dark";
+            }
+        </script>
     </body>
 </html>
