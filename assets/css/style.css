@@ -94,6 +94,7 @@ a.no-decoration:focus{
     display: inline-block;
     font-size: 22.5px;
     margin: auto 5px;
+    cursor: pointer;
 }
 
 .nav-item > a{
