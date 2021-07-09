@@ -3,16 +3,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <head>
+        <!-- icons - https://fontawesome.com/license -->
+        <script src="https://kit.fontawesome.com/44caaaecfc.js" rel="preload" crossorigin="anonymous"></script>
+
         <link rel="icon" href="assets/img/logos/LogoSB_noBG_400x400.png">
         <title>Portfolio - Simone Bianco</title>
 
         <!-- styles -->
         <link rel="stylesheet" href="assets/css/style.css">
 
-        <!-- icons -->
-        <script src="https://kit.fontawesome.com/44caaaecfc.js" crossorigin="anonymous"></script>
+        <!-- libraries -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>  
     </head>
-    <body class="dark">
+    <body>
         <nav>
             <div class="row" style="margin: 5px 20px;">
                 <div class="nav-item logo">
@@ -20,29 +25,31 @@
                 </div>
                 <div class="nav-links">
                     <div class="nav-item">
-                        <i class="fas fa-adjust" style="color: var(--white)" onclick="goDark()"></i>
+                        <a class="no-decoration" href="javascript:goToContacts()">Contact me</a>
                     </div>
                 </div>
             </div>
         </nav>
         <main>
-            <div id="intro" class="container">
-                <div class="row info" style="flex-direction: column; align-items: flex-start">
-                    <div>
-                        <h1>Simone Bianco</h1>
-                    </div>
-                    <div>
-                        <p>Computer Science Student and Software Developer</p>
+            <div id="hero" class="container">
+                <div class="row info" style="flex-direction: column;">
+                    <span class="headline">Simone Bianco</span>
+                    <span class="short-dsc">Computer Science Student and Software Developer</span>
+                    <div id="call-to-scroll" class="fix-to-end">
+                        <span>Learn more about me!</span>
+                        <div>
+                            <i class="fas fa-angle-double-down"></i>
+                        </div>
                     </div>
                 </div>
             </div>
             <hr>
             <div id="about" class="container">
                 <div class="title">
-                    <h2>Something about me</h2>
+                    <h2>About me</h2>
                 </div>
                 <div class="row info">
-                    <img src="assets/img/other/profile.jpeg" style="border-radius: 50%" width="250"></img>
+                    <img src="assets/img/profile.jpeg" style="border-radius: 50%" width="250"></img>
                     <div>
                         <div class="content">
                             <div style="margin-bottom: 30px">
@@ -60,27 +67,27 @@
             <hr>
             <div id="skills" class="container">
                 <div class="title">
-                    <h2>Some projects I've worked on!</h2>
+                    <h2>Projects</h2>
                 </div>
                 <div class="card-row">
                     <div class="card-column card">
-                        <img src="assets/img/other/hb_logo.png" width="100%">
+                        <img src="assets/img/projects/hb_logo.png" width="100%">
                         <div class="content">
                             <h4>The Hidden Book</h4>
-                            <p>The Hidden Book is a completely open source and free 200+ ebooks database where anyone can download ebooks.</p>
+                            <p>The Hidden Book is a completely open source and free 200+ ebooks database where anyone can download ebooks</p>
                             <p><a class="button no-decoration" href="https://github.com/Exyss/thehiddenbook" target="_blank">Learn more</a></p>
                         </div>
                     </div>
                     <div class="card-column card">
-                        <img src="assets/img/other/fp_logo.png" width="100%">
+                        <img src="assets/img/projects/fp_logo.png" width="100%">
                         <div class="content">
                             <h4>Focal Point</h4>
-                            <p>Task scheduling software with built-in reminders through notifications developed as a school project </p>
+                            <p>Task scheduling software with built-in reminders through notifications developed as a school project</p>
                             <p><a class="button no-decoration" href="https://github.com/Exyss/focalpoint" target="_blank">Learn more</a></p>
                         </div>
                     </div>
                     <div class="card-column card">
-                        <img src="assets/img/other/ai_logo.png" width="100%">
+                        <img src="assets/img/projects/ai_logo.png" width="100%">
                         <div class="content">
                             <h4>AutoInsta</h4>
                             <p>Instagram bot with automated direct messages and comments sent to a list of users</p>
@@ -88,7 +95,7 @@
                         </div>
                     </div>
                     <div class="card-column card">
-                        <img src="assets/img/other/gol_logo.png" width="100%">
+                        <img src="assets/img/projects/gol_logo.png" width="100%">
                         <div class="content">
                             <h4>Conway's Game of Life</h4>
                             <p>A playable version of Conway's Game of Life with some additional features </p>
@@ -100,42 +107,42 @@
             <hr>
             <div id="skills" class="container">
                 <div class="title">
-                    <h2>Tech I'm proficient with</h2>
+                    <h2>Work Stack</h2>
                 </div>
                 <div class="card-row">
                     <div class="icon-column">
-                        <img src="assets/img/icons/python.png" width="100%">
+                        <img src="assets/img/skills/python.png" width="100%">
                         <h5>Python</h5>
                     </div>
                     <div class="icon-column">
-                        <img src="assets/img/icons/php_mysql.png" width="100%">
-                        <h5>PHP/MySQL</h5>
+                        <img src="assets/img/skills/backend.png" width="100%">
+                        <h5>PHP · MySQL</h5>
                     </div>
                     <div class="icon-column">
-                        <img src="assets/img/icons/html_css.png" width="100%">
-                        <h5>HTML/CSS</h5>
+                        <img src="assets/img/skills/styling.png" width="100%">
+                        <h5>CSS · SASS</h5>
                     </div>
                     <div class="icon-column">
-                        <img src="assets/img/icons/js.png" width="100%">
-                        <h5>JavaScript</h5>
+                        <img src="assets/img/skills/scripting.png" width="100%">
+                        <h5>Scripting</h5>
                     </div>
                     <div class="icon-column">
-                        <img src="assets/img/icons/bootstrap.png" width="100%">
-                        <h5>Bootstrap</h5>
+                        <img src="assets/img/skills/frameworks.png" width="100%">
+                        <h5>Frameworks</h5>
                     </div>
                     <div class="icon-column">
-                        <img src="assets/img/icons/java.png" width="100%">
+                        <img src="assets/img/skills/java.png" width="100%">
                         <h5>Java</h5>
                     </div>
                 </div>
             </div>
-            <div id="scrollbutton">
+            <div id="top-btn">
                 <a class="no-decoration" href="javascript:goToTop();"><i class="fas fa-chevron-up"></i></a>
             </div>
         </main>
         <footer>
-            <div class="row">
-                <p>Contact me!</p>
+            <div class="title">
+                <h2>Contact me!</h2>
             </div>
             <div id="contacts" class="row">
                 <div class="social-icon">
@@ -149,19 +156,13 @@
                 </div>
             </div>
             <div class="row">
-                <p>© Simone Bianco 2021</p>
+                <p>© Simone Bianco · 2021</p>
             </div>
             <div class="row" style="color: grey; font-size: 13px;">
                 <p>English - <a class="no-decoration" style="text-decoration-line: underline;" href="it">Italian</a></p>
             </div>
         </footer>
-        <script src="assets/js/fade-in.js"></script>
-        <script src="assets/js/scrollbutton.js"></script>
-        <script>
-            //switch to dark/light mode
-            function goDark(){
-                document.body.className = document.body.className == "dark" ? "" : "dark";
-            }
-        </script>
+        <script src="assets/js/animations.js"></script>
+        <script src="assets/js/scroll.js"></script>
     </body>
 </html>
