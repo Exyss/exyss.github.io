@@ -2,7 +2,7 @@
 layout: page
 permalink: /manuscripts/
 title: Manuscripts
-description: 
+description:
 nav: true
 nav_order: 2
 ---

@@ -4,7 +4,7 @@ title: Progettazione di Algoritmi
 description: Sessioni di tutoraggio per l'a.a. 2025/26.
 instructor: Simone Bianco
 year: 2025/2026
-term: 
+term:
 location: Edificio E, Stanza T1 (o Google Meet)
 time: Martedì 10:00-12:00, Giovedì 10:00-12:00
 course_id: algo-design-26
